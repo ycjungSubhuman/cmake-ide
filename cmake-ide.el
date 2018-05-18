@@ -585,7 +585,7 @@ the object file's name just above."
 		))))
     (list (s-join " " result))))
 
-(defun cmake-ide-set-compiler-flags (buffer rawflags includes sys-includes)
+(defun cmake-ide-set-compiler-flags (buffer flags includes sys-includes)
   "Set ac-clang and flycheck variables for BUFFER from FLAGS, INCLUDES and SYS-INCLUDES."
   (when (buffer-live-p buffer)
     (with-current-buffer buffer
